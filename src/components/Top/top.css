@@ -1,0 +1,54 @@
+.clrDiv{
+    height: 74.18vw;
+    display: flex;
+    position: absolute;
+}
+
+.mobel{
+    margin-top: 49.43vw;
+    width: 37.5vw;
+    height: 24.68vw;
+    position: absolute;
+    z-index: 1;
+}
+
+.scene{
+    position: absolute;
+    z-index: 0;
+    height: 59.43vw;
+    width: 100vw;
+}
+
+.top{
+    margin-left: 15.3vw;
+    z-index: 0;
+}
+
+.top-nav{
+    display: flex;
+    height: 6.25vw;
+    justify-content: space-between;
+}
+
+.motto{
+    color: #FFFFFF;
+    font-family: 'DM Serif Display';
+    position: relative;
+    z-index: 1;
+    width: 46.3vw;
+    margin-top: 5.62vw;
+    font-size: 6.25vw;
+    line-height: 100%;
+}
+
+.logo{
+    margin-top: 3.125vw;
+    width: 13.25vw;
+    height: 3.125vw;
+}
+
+.union{
+    width: 1.843vw;
+    height: 0.771vw;
+    margin-left: 1.5vw;
+}

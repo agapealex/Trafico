@@ -1,0 +1,72 @@
+.faq{
+    height: 93.75vw;
+    width: 85vw;
+    position: absolute;
+    top: 174.9vw;
+    margin-left: 15vw;
+}
+
+.faq img{
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.group{
+    margin-top: 6.68vw;
+    margin-right: 11vw;
+    width: 44.25vw;
+    height: 30.62vw;
+}
+
+.title-f{
+    align-items: center;
+    letter-spacing: 0.1em;
+
+    color: #EE4D47;
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    font-family: 'Rubik';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.msg-f{
+    margin-top: 2.75vw;
+    font-family: 'DM Serif Display';
+    width: 34.3vw;
+    height: 12.5vw;
+    color: #402B2B;
+    font-size: 3vw;
+    line-height: 140%;
+}
+
+.title-faq{
+    margin-top: 7.3vw;
+    position: absolute;
+    height: 18.3vw;
+    width: 100%;
+}
+
+.container-title{
+    width: 34.3vw;
+    height: 30.6vw;
+    margin-top: 6.6vw;
+    position: relative;
+    z-index: 2;
+}
+
+#rectangle9{
+    width: 73.125vw;
+    height: 93.7vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .faq{
+        height: 93.75vw;
+        width: 85vw;
+        position: absolute;
+        top: 241.9vw;
+        margin-left: 15vw;
+    }
+}

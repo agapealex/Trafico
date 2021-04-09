@@ -1,0 +1,27 @@
+.navbar{
+    display: flex;
+    z-index: 2;
+    width: 37.75vw;
+    height: 3.75vw;
+    justify-content: space-between;
+    margin-left: 18.25vw;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.5vw;
+    letter-spacing: 0.05em;
+}
+
+.navbar a{
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Rubik';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1vw;
+}
+.navbar a:last-child{
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}

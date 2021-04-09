@@ -1,0 +1,9 @@
+html, body, #root, .App {
+  height: 100%;
+}
+.App-header {
+  width: 100vw;
+  height: 336.3vw;
+  position: relative;
+  background: #FEF8F5;
+}

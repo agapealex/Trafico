@@ -1,0 +1,82 @@
+.about-us{
+    top: 80.63vw;
+    width: 73.1875vw;
+    height: 34.375vw;
+    position: absolute;
+    margin-left: 15.31vw;
+}
+
+.about-us img{
+    float: right;
+    width: 35.937vw;
+    height: 30vw;
+}
+
+.left{
+    height: 29.75vw;
+    width: 35.62vw;
+    position: relative;
+    justify-content: space-between;
+}
+
+.text-about-us{
+    margin-top: 4.625vw;
+    height: 15.37vw;
+}
+
+.text-question{
+    bottom: 0;
+    height: 10vw;
+    position: absolute;
+    width: 100%;
+    margin-top: 4.375vw;
+}
+
+#ilustration{
+    width: 39.93vw;
+    height: 30vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-us{
+        top: 120.63vw;
+        width: 146.1875vw;
+        height: 69.375vw;
+        position: absolute;
+        margin-left: 15.31vw;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about-us img{
+        float: right;
+        width: 70.937vw;
+        height: 60vw;
+    }
+
+    .left{
+        height: 60.75vw;
+        width: 70.62vw;
+        position: relative;
+        justify-content: space-between;
+    }
+    
+    .text-about-us{
+        margin-top: 8.625vw;
+        height: 30.37vw;
+        width: 200vw;
+    }
+    
+    .text-question{
+        bottom: 0;
+        height: 20vw;
+        position: absolute;
+        width: 100%;
+        margin-top: 8.375vw;
+    }
+    
+    #ilustration{
+        width: 80.93vw;
+        height: 60vw;
+    }
+}

@@ -1,0 +1,27 @@
+.note-comp{
+    height: 10vw;
+    width: 100%;
+    margin-top: 4.37vw;
+    display: flex;
+    z-index: 2;
+    position: absolute;
+}
+
+.left-sign{
+    height: 100%;
+    width: 1.5vw;
+    background-color: #ED4D47;
+    border-top-left-radius: 0.25vw;
+    border-bottom-left-radius: 0.25vw;
+}
+
+.txt{
+    z-index: 4;
+    background-color: rgba(252,221,212,0.4);
+    padding:  1.87vw 3.43vw 1.87vw 3.43vw;
+    font-size: 1.5vw;
+    line-height: 2.25vw;
+    font-family: 'Rubik';
+    font-weight: 500;
+    color: #402B2B;
+}

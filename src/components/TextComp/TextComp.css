@@ -1,0 +1,55 @@
+.text-comp{
+    height: 100%;
+    width: 29.37vw;
+}
+
+.title{
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #EE4D47;
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    font-family: 'Rubik';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.msg{
+    margin-top: 2.5vw;
+    font-family: 'Rubik';
+    color: #402B2B;
+    font-weight: 300;
+    font-size: 1.125vw;
+    line-height: 2.5vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .text-comp{
+        height: 100%;
+        width: 39.37vw;
+    }
+    
+    .title{
+        align-items: center;
+        letter-spacing: 0.1em;
+        color: #EE4D47;
+        font-size: 3.5vw;
+        line-height: 2.5vw;
+        font-family: 'Rubik';
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .msg{
+        margin-top: 4.5vw;
+        font-family: 'Rubik';
+        color: #402B2B;
+        font-weight: 300;
+        font-size: 3.125vw;
+        line-height: 4.5vw;
+        width: 80vw;
+    }
+    
+    
+}
+

@@ -1,0 +1,57 @@
+.footer-container{
+    top:268.7vw;
+    position: absolute;
+    height: 66vw;
+    width: 100%;
+}
+
+.blue-div{
+    width: 87.5vw;
+    height: 41.3vw;
+    background-color: #0F264C;
+    margin-top: 19.8vw;
+    border-top-right-radius: 6.25vw;
+    margin-bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.car{
+    margin-top: 9.25vw;
+    position: absolute;
+    z-index: 2;
+}
+
+.form-container{
+    height: 27.5vw;
+    width: 64vw;
+    position: absolute;
+    margin-top: 12.3vw;
+    background-color: red;
+    margin-left: 14.6vw;
+    z-index: 3;
+    display: flex;
+}
+
+.sentence{
+    height: 10vw;
+    width: 29.6vw;
+    background-color: tomato;
+    margin-top: 13.1vw;
+}
+
+.form-space{
+    width: 27.5vw;
+    height: 34.3vw;
+    background-color: green;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-container{
+        top:368.7vw;
+        position: absolute;
+        height: 66vw;
+        width: 100%;
+    }
+    
+}

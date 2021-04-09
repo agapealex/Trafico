@@ -1,0 +1,25 @@
+.main-button{
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    background-color: #EE4D47;
+    border: none;
+    border-radius: 0.312vw;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'Rubik';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1vw;
+    line-height: 1.18vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+
+.union-f{
+    width: 1.843vw;
+    height: 0.771vw;
+    margin-left: 1.5vw;
+}
