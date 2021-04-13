@@ -1,4 +1,4 @@
-.apply{
+#apply{
     position: absolute;
     top: 125.25vw;
     height: 42.5vw;
@@ -10,7 +10,7 @@
     width: 45vw;
     height: 42.5vw;
 }
-.apply .left-p img{
+#apply .left-p img{
     display:block;
     margin:auto;
 }
@@ -33,22 +33,16 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .apply{
-        position: absolute;
-        top: 145.25vw;
+    #apply{
+        top: 230vw;
         height: 42.5vw;
         width: 177vw;
         margin-left: 7.93vw;
-        display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     
     .right-p{
-        height: 29.75vw;
-        width: 32vw;
-        position: relative;
-        justify-content: space-between;
-        margin-top: 6.437vw;
+        width: 62vw;
     }
 
     #illustrations{

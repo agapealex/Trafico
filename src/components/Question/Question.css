@@ -1,9 +1,8 @@
-.question-container{
+#question-container{
     background: #FFF7F5;
     box-shadow: 0vw 1.25vw 2.5vw rgba(238, 77, 71, 0.1);
     border-radius: 0.625vw;
     width: 34.3vw;
-    height: 5.62vw;
 }
 
 .question-dropdown{
@@ -41,12 +40,12 @@
 .plus-sign{
     width: 1.25vw;
     height: 1.25vw;
-
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
+
 .question{
     width: 88%;
     height: 100%;
@@ -54,10 +53,9 @@
     justify-content: center;
     align-items: center;
 }
+
 .text-question-o{
     width: 25vw;
-    max-height: 5.62vw;
-    font-weight: 500;
     font-size: 1.125vw;
     font-family: 'Rubik';
     font-weight: 500;
@@ -76,54 +74,32 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .question-container{
-        background: #FFF7F5;
-        box-shadow: 0vw 1.25vw 2.5vw rgba(238, 77, 71, 0.1);
-        border-radius: 0.625vw;
-        width: 34.3vw;
-        height: 5.62vw;
-
+    #question-container{
+        width: 70.3vw;
     }
     
     .question-dropdown{
-        width: 34.3vw;
-        height: 5.625vw;
-        background-color: #FFFFFF;;
-        box-shadow: 0vw 1.25vw 2.5vw rgba(238, 77, 71, 0.1);
-        border-radius: 0.625vw;
-        display: flex;
-        margin-bottom: 0.625vw;
-    }
-    
-    .sign-container{
-        width: 15%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 70.3vw;
+        height: 10.625vw;
     }
     
     .minus-sign{
-        width: 1.25vw;
-        height: 0.125vw;
-        background: #EE4D47;
-        position: absolute;
+        width: 2.25vw;
+        height: 0.3vw;
     }
     
     .vertical-sign{
-        width: 0.125vw;
-        height: 1.25vw;
-        background: #EE4D47;
-        position: absolute;
+        width: 0.3vw;
+        height: 2.25vw;
     }
     
     .plus-sign{
-        width: 1.25vw;
-        height: 1.25vw;
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
+        width: 2.25vw;
+        height: 2.25vw;
+    }
+
+    .text-question-o{
+        width: 50vw;
+        font-size: 2.125vw;
     }
   }

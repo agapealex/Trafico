@@ -11,7 +11,7 @@ export class TextComp extends React.Component{
         return(
             <div className='text-comp'>
                 <p className='title'>{this.props.title}</p>
-                <p className='msg' style={this.props.style}>{this.props.msg}</p>
+                <p className='msg' >{this.props.msg}</p>
             </div>
         )
     }

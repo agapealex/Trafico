@@ -1,4 +1,4 @@
-.about-us{
+#about-us{
     top: 80.63vw;
     width: 73.1875vw;
     height: 34.375vw;
@@ -6,7 +6,7 @@
     margin-left: 15.31vw;
 }
 
-.about-us img{
+#about-us img{
     float: right;
     width: 35.937vw;
     height: 30vw;
@@ -38,18 +38,16 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .about-us{
+    #about-us{
         top: 120.63vw;
         width: 146.1875vw;
         height: 69.375vw;
-        position: absolute;
-        margin-left: 15.31vw;
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .about-us img{
-        float: right;
+    #about-us img{
+        margin-top: 15vw;
         width: 70.937vw;
         height: 60vw;
     }
@@ -57,8 +55,6 @@
     .left{
         height: 60.75vw;
         width: 70.62vw;
-        position: relative;
-        justify-content: space-between;
     }
     
     .text-about-us{
@@ -68,10 +64,7 @@
     }
     
     .text-question{
-        bottom: 0;
         height: 20vw;
-        position: absolute;
-        width: 100%;
         margin-top: 8.375vw;
     }
     

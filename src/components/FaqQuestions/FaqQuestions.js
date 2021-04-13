@@ -1,8 +1,9 @@
 import React from 'react';
 import './FaqQuestions.css';
-import {Question} from '../Question/Question';
+import Question from '../Question/Question';
+import Radium, { StyleRoot } from 'radium';
 
-export class FaqQuestions extends React.Component{
+class FaqQuestions extends React.Component{
 
     constructor(props){
         super(props);
@@ -19,21 +20,46 @@ export class FaqQuestions extends React.Component{
 
         let questions;
         questions = list.map((element, index)=> {
+
+            const evenIndexStyle = {
+                '@media (min-width: 600px)': {
+                    gridRow : `${index/2 + 1} / ${index/2 + 4}`,
+                    gridColumn : '1/2'
+                },
+                '@media (max-width: 600px)': {
+                    gridColumn : '1/1'
+                }
+              };
+
+              const oddIndexStyle = {
+                '@media (min-width: 600px)': {
+                    gridRow : `${parseInt(index/2) + 1} / ${parseInt(index/2) + 4}`,
+                    gridColumn : '2/2'
+                },
+                '@media (max-width: 600px)': {
+                    gridColumn : '1/1'
+                }
+                };
+
             if(this.state.actualChildSelected === index){
                 if(index % 2 === 0){
-                    return  <div style={{gridColumn : '1/2',  gridRow : `${index/2 + 1} / ${index/2 + 4}`}} >             
-                                 <Question quest={element.question} answer={element.answer} index={index} heightDropdown={'15.6vw'} changeStateParent={this.changeStateParent}/>                    
-                            </div>
+                    return  ( 
+                        <StyleRoot style={evenIndexStyle} >             
+                            <Question quest={element.question} answer={element.answer} index={index} heightDropdown={'15.6vw'} changeStateParent={this.changeStateParent}/>                    
+                        </StyleRoot>   
+                    )
                 }
                 else{
-                    return  <div style={{gridColumn : '2/2', gridRow : `${parseInt(index/2) + 1} / ${parseInt(index/2) + 4}`}}>             
-                                <Question quest={element.question} answer={element.answer} index={index} heightDropdown={'15.6vw'} changeStateParent={this.changeStateParent} anyDropdownOpened={this.state.anyDropdownOpened}/>                    
-                            </div>
+                    return  (
+                        <StyleRoot style={oddIndexStyle} >             
+                            <Question quest={element.question} answer={element.answer} index={index} heightDropdown={'15.6vw'} changeStateParent={this.changeStateParent}/>                    
+                        </StyleRoot> 
+                    )
                 }
             }
-            return  <div>                
+            return  <StyleRoot>                
                         <Question quest={element.question} answer={element.answer} index={index} heightDropdown={'5.62vw'} changeStateParent={this.changeStateParent} anyDropdownOpened={this.state.anyDropdownOpened}/>                       
-                    </div>
+                    </StyleRoot>
         });
         return questions;
     }
@@ -90,12 +116,13 @@ export class FaqQuestions extends React.Component{
         ];
 
         return(
-            <div className='faq-questions'>
+            <div id='faq-questions'>
                 {
                     this.showQuestions(moqQuestions)
                 }
-
             </div>
         )
     }
 }
+
+export default Radium(FaqQuestions);

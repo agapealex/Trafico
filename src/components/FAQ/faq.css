@@ -1,4 +1,4 @@
-.faq{
+#faq{
     height: 93.75vw;
     width: 85vw;
     position: absolute;
@@ -6,7 +6,7 @@
     margin-left: 15vw;
 }
 
-.faq img{
+#faq img{
     right: 0;
     position: absolute;
     z-index: 1;
@@ -62,11 +62,21 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .faq{
+    #faq{
         height: 93.75vw;
         width: 85vw;
-        position: absolute;
-        top: 241.9vw;
+        top: 310vw;
         margin-left: 15vw;
+    }
+    
+    #faq img{
+        height: 40vw;
+        width: 55vw;
+    }
+    
+    .container-title{
+        width: 34.3vw;
+        height: 30.6vw;
+        margin-top: 13vw;
     }
 }

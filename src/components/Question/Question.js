@@ -1,7 +1,8 @@
 import React from 'react';
 import './Question.css';
+import Radium, { StyleRoot } from 'radium';
 
-export class Question extends React.Component{
+class Question extends React.Component{
 
     constructor(props){
         super(props);
@@ -49,8 +50,17 @@ export class Question extends React.Component{
                     </div>
         }
 
-        return(
-            <div className='question-container' style = {{height : this.props.heightDropdown}}>
+        const style = {
+            '@media (min-width: 600px)': {
+                height: this.props.heightDropdown
+            },
+            '@media (max-width: 600px)': {
+                height: `calc(${this.props.heightDropdown}*2)`
+            }
+          };
+
+        return(       
+            <StyleRoot id='question-container' style = {style}>
                 <div className='question-dropdown'>
                     <div className='question'>
                         <div className='text-question-o'>
@@ -62,7 +72,10 @@ export class Question extends React.Component{
                     </div>
                 </div>
                 {answer}
-            </div>
+            </StyleRoot>
+
         )
     }
 }
+
+export default Radium(Question);

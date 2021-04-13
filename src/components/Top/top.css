@@ -1,4 +1,4 @@
-.clrDiv{
+.clr-div{
     height: 74.18vw;
     display: flex;
     position: absolute;
@@ -51,4 +51,28 @@
     width: 1.843vw;
     height: 0.771vw;
     margin-left: 1.5vw;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .top-nav{
+        flex-direction: column;
+        height: 6.25vw;
+    }
+    
+    .logo{
+        margin-top: 3.125vw;
+        width: 26.25vw;
+        height: 6.3vw;
+    }
+
+    .motto{
+        width: 46.3vw;
+        margin-top: 18.62vw;
+        font-size: 5.25vw;
+    }
+
+    .mobel{
+        margin-top: 54.43vw;
+    }
 }

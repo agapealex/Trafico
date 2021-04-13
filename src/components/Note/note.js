@@ -9,7 +9,7 @@ export class Note extends React.Component{
 
     render(){
         return(
-            <div className='note-comp'>
+            <div id='note-comp'>
                 <div className='left-sign'/>
                 <div className='txt'>
                     <p>{this.props.txt}</p>

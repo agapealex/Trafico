@@ -10,7 +10,7 @@ export class Top extends React.Component{
     render(){
         let motto = 'Your awesome traffic permit consultant.'
         return(
-            <div className='clrDiv'>
+            <div className='clr-div'>
                 <img src={scene} className="scene" />
                 <img src={mobel} className="mobel" />
                 <div className="top">
@@ -21,8 +21,7 @@ export class Top extends React.Component{
 
                     <p className="motto">
                         {motto}
-                    </p>
-                    
+                    </p>                    
                     <MainButton nameBtn='Get started' showSign={true} style={{width: '13.75vw', height: '3.75vw', marginTop: '3.75vw'}}/>
                 </div>
             </div>

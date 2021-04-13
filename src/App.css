@@ -6,4 +6,6 @@ html, body, #root, .App {
   height: 336.3vw;
   position: relative;
   background: #FEF8F5;
+  overflow-x: hidden;
+  max-width:100%;
 }

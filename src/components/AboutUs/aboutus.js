@@ -11,7 +11,7 @@ export class AboutUs extends React.Component{
         var note = 'How do you do when you need to obtain a commercial traffic permit for freight transport to your business?';
 
         return(
-            <div className='about-us'>
+            <div id='about-us'>
                 <img src = {ilustration} id='ilustration'/>
                 <div className='left'>
                     <div className='text-about-us'>

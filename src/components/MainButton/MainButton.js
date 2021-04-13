@@ -16,7 +16,7 @@ export class MainButton extends React.Component{
 
     render(){
         return(
-            <button className='main-button' style={this.props.style}>
+            <button id='main-button' style={this.props.style}>
                 {this.props.nameBtn}
                 {
                     this.getSign()
